@@ -1,0 +1,46 @@
+.store {
+    .setupuser {
+        .title {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .desc {
+            text-align: center;
+        }
+
+        .Categories {
+            border-radius: 10px;
+            transition: .6s;
+            .logo {
+                margin-top: 15px;
+                img {
+                    @include avatar(120px,120px,auto,block);
+                    border-radius: 100%;
+                    background-size: cover;
+                }
+            }
+
+            .info {
+                h3 {
+                    font-size: 15px;
+                }
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+                cursor: pointer;
+            }
+        }
+
+        // active select 
+        .active-select {
+            border: 1px solid #007bff4f !important;
+            background: #3897ff2b !important;
+        }
+
+        .btn-primary {
+            opacity: .6;
+        }
+    }
+}

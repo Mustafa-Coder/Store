@@ -1,0 +1,89 @@
+- var pagename = 'Fitness Woman | Closth 2020 | Store .'
+<! DOCTYPE html >
+html 
+  head
+    include pug/layouts/_head
+    title #{pagename}
+  body 
+    .store
+        // Nav 
+        include pug/components/_navbarhome
+        // Sign up 
+        br
+        .container.showproduct
+              .product.card.border-0.shadow-store
+                  .row 
+                    // products images 
+                    .col-lg-6
+                        .show-cover.m-2
+                            img(src="imgs/products/woman/06.jpg", class="img-fuild")
+                    // ./ products images 
+                    // products information
+                    .col-lg-6
+                        .info.m-2
+                            h1.title Jacket Hallwoine for lover 
+                            p.desc.mb-2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias iure, totam asperiores est voluptatum quaerat tempore ipsa quia libero quibusdam fuga modi numquam cupiditate tenetur quod voluptatem vel animi consequatur!
+                            .price.mb-4.d-flex
+                                span.beforediscount.ml-2 EGP 90
+                                span.afterdiscount.ml-2 EGP 50
+                                // defualt price hidden 
+                                input(type="hidden",value="50").ml-2.sameprice
+                                input(type="text",value="1",class="form-control form-control-sm plusproduct").ml-2
+                            .control.mt-2.mb-2 
+                                button.btn.btn-outline-primary.btn-sm.addcart #[i.fas.fa-shopping-bag.cart] Add To Cart 
+                                button.btn.btn-success.btn-sm.addbuy  #[i.fas.fa-shopping-cart] Buy Now
+                        // comments and fadeback 
+                        .comments-fadeback.mb-4.mt-4
+                            h3.title Comments #[a(href="#")  See more comments #[i.fas.fa-arrow-right] ]
+                            .comment.d-flex.card
+                                .avatar 
+                                    p.name #[a(href="#") Joliat Bandiam] #[span . 4.5 #[i.fas.fa-star]]
+                                    img(src="imgs/avatar/01.jpg").rounded-circle
+                                p.desc consectetur adipisicing elit. Molestias iure, totam asperiores est voluptatum quaerat tempore ipsa quia libero quibusdam fuga modi numquam cupiditate tenetur quod voluptatem vel animi 
+                                  
+                    // ./ products information 
+              // aother products
+              .aother-products.card.border-0.shadow-store.mb-2.mt-3.p-2
+                h2.title Recommended for you 
+                .row
+                  .col-lg-3
+                    .aother-product
+                        .overlay.overlay-product
+                            a(href="#show") #[i.fas.fa-eye]
+                        .cover 
+                            img(src="imgs/products/woman/01.jpg")
+                        h3.desc Pantalon With jacket dlivers 
+                        p.rate 4.5 #[i.fas.fa-star]
+                  .col-lg-3
+                    .aother-product
+                        .overlay.overlay-product
+                            a(href="#show") #[i.fas.fa-eye]
+                        .cover 
+                            img(src="imgs/products/woman/02.jpg")
+                        h3.desc Pantalon With jacket dlivers 
+                        p.rate 3.5 #[i.fas.fa-star]
+                  .col-lg-3
+                    .aother-product
+                        .overlay.overlay-product
+                            a(href="#show") #[i.fas.fa-eye]
+                        .cover 
+                            img(src="imgs/products/woman/03.jpg")
+                        h3.desc Pantalon With jacket dlivers 
+                        p.rate 1.5 #[i.fas.fa-star]
+                  .col-lg-3
+                    .aother-product
+                        .overlay.overlay-product
+                            a(href="#show") #[i.fas.fa-eye]
+                        .cover 
+                            img(src="imgs/products/woman/04.jpg")
+                        h3.desc Pantalon With jacket dlivers 
+                        p.rate 5.5 #[i.fas.fa-star] 
+
+    // btn show your products on cart 
+    .show-cart 
+        i.fas.fa-shopping-bag 
+    // sidebar shopping cart 
+    include pug/components/_sidebarcart  
+    // loading for pages 
+    include pug/components/loading.pug 
+    include pug/layouts/_footer

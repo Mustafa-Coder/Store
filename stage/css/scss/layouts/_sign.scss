@@ -1,0 +1,48 @@
+.store {
+    .signup {
+        margin: 10% auto;
+        width: 500px;
+        background: none;
+        border: 0;
+        // title 
+        .title {
+            font-size: 1.5rem;
+        
+        }
+        .desc {
+            font-size: .8rem;
+            color: #76818a;
+        }
+
+        // signup 
+        .form-group {
+            label {
+                margin-right: 15px;
+                margin-top: 5px;
+                color: #535656;
+                font-size: 15px;
+                width: 8rem;
+            }
+            .form-control {
+                border-color: #d2dce4; 
+                
+            }
+
+            
+        }
+
+        // store name 
+        .storename {
+            display: none !important;
+        }
+
+        //username 
+        .username {
+            display: none !important;
+        }
+
+        .storenameactive {
+            display: block !important;
+        }
+    }
+}

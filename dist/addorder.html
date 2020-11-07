@@ -1,0 +1,143 @@
+<! DOCTYPE html >
+<html> 
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="store Ecommerce"/>
+    <meta name="keywords" content="shopping,store,ecommerce"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <!-- style files -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+    <!-- Plugin::zoom-image->main.css -->
+    <!-- logo website -->
+    <link rel="shortcut icon" href="imgs/logos/01.png" type="image/x-icon"/>
+    <title>Orders | Online Store .</title>
+  </head>
+  <body> 
+    <div class="store">
+      <!-- sidebar -->
+      <div class="sidebar"> 
+        <div class="avatar-store"> <img class="rounded-circle" src="imgs/logos/01.png"/>
+          <p class="store-title">Name store </p>
+        </div>
+        <div class="links-store"> 
+          <ul class="list-unstyled"> 
+            <li><a href="dashstore.html">Dashboard </a></li>
+            <li><a href="orders.html">Products </a></li>
+            <li><a href="#">Clients </a></li>
+            <li><a href="#"> Employees </a></li>
+            <li><a href="#"> Anylistes </a></li>
+            <li><a href="set_dash.html"> settings </a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- store dashboard  -->
+      <div class="container-fuild store-dashboard addorders">
+        <!-- navbar store -->
+        <div class="navbar-store"> 
+          <div class="logo"> 
+            <h1>Store .</h1>
+          </div>
+          <div class="links-nav">
+            <ul class="list-unstyled"> 
+              <li><a href="home.html"><i class="fas fa-home"></i> </a></li>
+              <li><a href="#"><i class="fas fa-search"></i> </a></li>
+              <li><a href="#"><img class="rounded-circle" src="imgs/logos/02.jpg"/> </a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="content p-3">
+          <div class="header mb-3"> 
+            <h3 class="title-header">Add Orders </h3><a class="btn btn-outline-primary" href="addorder.html"><i class="fas fa-list"></i></a><a class="btn btn-outline-success mr-5 btn-sm" href="landingstore.html"><i class="fas fa-eye"></i> view store </a>
+          </div>
+        </div>
+        <div class="container"> 
+          <div class="neworder card p-2 shadow-store border-0">
+            <div class="form-group"> 
+              <label class="title">Title order </label>
+              <input class="form-control form-control-md border-0" type="text" placeholder="New shose"/>
+            </div>
+            <div class="form-group"> 
+              <label class="title">Description </label>
+              <textarea class="form-control border-0" placeholder="Responsibility"></textarea>
+            </div>
+            <div class="form-group"> 
+              <p class="title">Pricing </p>
+              <div class="row">
+                <div class="col-lg-4">  
+                  <div class="form"> 
+                    <label class="title">The price before discount </label>
+                    <input class="form-control form-control-sm" type="text" placeholder="00.00"/>
+                  </div>
+                </div>
+                <div class="col-lg-4">  
+                  <div class="form"> 
+                    <label class="title">The price after discount </label>
+                    <input class="form-control form-control-sm" type="text" placeholder="00.00"/>
+                  </div>
+                </div>
+                <div class="col-lg-4">  
+                  <div class="form"> 
+                    <label class="title">The final price </label>
+                    <input class="form-control form-control-sm" type="text" value="50 USD" disabled="disabled"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- categories -->
+            <div class="row"> 
+              <div class="col-lg-4"> 
+                <div class="form-group"> 
+                  <label class="title">categories </label>
+                  <select class="form-control form-control-sm"> 
+                    <option selected="selected">Chosse...</option>
+                    <option value="">Fashion </option>
+                    <option value="">Watches </option>
+                    <option value="">Computers </option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-4"> 
+                <div class="form-group"> 
+                  <label class="title">items </label>
+                  <select class="form-control form-control-sm"> 
+                    <option selected="selected">Chosse...</option>
+                    <option value="">Hp </option>
+                    <option value="">Dell </option>
+                    <option value="">leneovo </option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-4"> 
+                <div class="form-group"> 
+                  <label class="title">Time </label>
+                  <input class="form-control form-control-sm" type="text" placeholder="dd/mm/yyyy"/>
+                </div>
+              </div>
+            </div>
+            <div class="form-group"> 
+              <button class="btn btn-primary btn-sm float-right">Create</button>
+            </div>
+          </div>
+        </div>
+        <!-- ./ content -->
+      </div>
+    </div>
+    <!-- loading for pages -->
+    <div class="loading-auto">
+      <h1>Store . </h1>
+      <div class="spinner-grow text-primary" role="status"><span class="sr-only">Loading...</span></div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!-- plugin (zoom image) => {return 'main.js' + 'zoom-image.js'} -->
+    <script src="js/plugin/zoom-image/zoom-image.js"></script>
+    <script src="js/plugin/zoom-image/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/store.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+.store {
+    .store-dashboard {
+        width: calc(100% - 150px);
+        float: right;
+
+        .content {
+            .header {
+                position: relative;
+                margin-left: 25px;
+                margin-right: 25px;
+                padding: 15px;
+                border-radius:15px ;
+                background-color: white;
+                h3 {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                }
+                a {
+                    position: absolute;
+                    right: 13px;
+                    top: 13px;
+                }
+            }
+
+            .news {
+                border: 0px solid;
+                border-radius: 15px;
+                overflow: hidden;
+            }
+
+            .counts {
+                border-radius: 10px;
+                transition: .3s;
+                h3 {
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+                .count {
+                    font-size: 2rem;
+                }
+                &:hover {
+                    box-shadow: 0 5px 10px rgba(154,160,185,.025), 0 15px 40px rgba(166,173,201,.2);
+                }
+            }
+
+            .employees {
+                .cover {
+                    img {
+                        @include avatar(65px,65px,15px,unset) ;
+                    }
+                }
+
+                a {
+                    position: absolute;
+                    right: 14px;
+                    top: 17px;
+                }
+
+                h3 {
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .settings {
+            background-color: white;
+        }
+    }
+
+    // store-orders 
+    .orders {
+        .order-table {
+            .table thead th {
+                border-bottom: 0 !important;
+                font-size: 14px;
+
+               
+            }
+
+            .table {
+                display: table;
+                tbody {
+                    tr {
+                        transition: .3s;
+                        td {
+                            padding: 7px 3px 6px;
+                            color: #4d566a;
+                        }
+                        &:hover {
+                            background-color: #7fb7ff2e;
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+    }
+
+    // addorders 
+    .addorders {
+        .neworder {
+            .form-group  {
+                .form {
+                    .form-control {
+                        width: 25%;
+                    }
+                }
+            }
+        }
+    }
+}

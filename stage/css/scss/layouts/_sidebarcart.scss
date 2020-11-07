@@ -1,0 +1,54 @@
+.sidebarcart {
+    position: fixed;
+    right: -350px;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    z-index: 1;
+    transition: .4s ;
+
+    &.activesidebar {
+        right: 0 !important;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin: 10px;
+    }
+
+    .products {
+        .cart {
+            position: relative;
+            .overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                padding: 16px;
+                opacity: 0;
+                transition: .6s;
+                background: #f2f2f2eb;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            .bag-product {
+                background: #f7f9fb9c;
+                padding: 10px;
+                display: flex;
+                cursor: pointer;
+                .cover-product  {
+                    img {
+                        @include avatar(50px,50px,none,unset);
+                    }
+                }
+                p {
+                    margin: 10px;
+                }
+            }
+
+        }
+       
+    }
+}

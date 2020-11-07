@@ -1,0 +1,54 @@
+.sidebar {
+    width: 150px;
+    background-color: #fdfdfd;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    .avatar-store {
+        img {
+           @include avatar(70px,70px,10px auto,block);
+        }
+        .store-title  {
+            font-size: 15px;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+
+    .links-store {
+        ul {
+            li {
+                transition: .3s ease;
+                padding: 15px;
+                text-align: center;
+                font-weight: 700;
+                a {
+                    text-decoration: none;
+                    color: #ccc;
+                    font-size: 14px;
+                    &:hover {
+                        color: white;
+                    }
+                }
+
+                &:hover {
+                    background-color: #0984e3;
+                }
+              
+            }
+
+            li:nth-child(1) {
+                border-left: 3px solid #0087ff;
+                a {
+                    color:  #0087ff;
+                    &:hover {
+                        color: white;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}

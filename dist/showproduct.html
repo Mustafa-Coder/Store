@@ -1,0 +1,154 @@
+<! DOCTYPE html >
+<html> 
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="store Ecommerce"/>
+    <meta name="keywords" content="shopping,store,ecommerce"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <!-- style files -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+    <!-- Plugin::zoom-image->main.css -->
+    <!-- logo website -->
+    <link rel="shortcut icon" href="imgs/logos/01.png" type="image/x-icon"/>
+    <title>Fitness Woman | Closth 2020 | Store .</title>
+  </head>
+  <body> 
+    <div class="store">
+      <!-- Nav -->
+      <div class="navhome">
+        <div class="logo"><img class="rounded-circle" src="imgs/logos/01.png"/></div>
+        <div class="search-form"> 
+          <form class="form-group">
+            <input class="form-control form-control-md" type="search" placeholder="Search..."/>
+          </form>
+        </div>
+        <div class="profile"><i class="fas fa-bell icon"></i>
+          <div class="fas fa-shopping-bag icon"></div>
+          <div class="user">
+            <div class="btn-group">
+              <button type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="rounded-circle" src="imgs/avatar/01.jpg"/> Mustafa Ahmed</button>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId"><a class="dropdown-item" href="#"><i class="fas fa-user"></i> profile </a><a class="dropdown-item" href="dashstore.html"><i class="fas fa-store"></i> Dashboard store</a><a class="dropdown-item" href="#"><i class="fas fa-eye"></i> View store</a><a class="dropdown-item" href="#"><i class="fas fa-cog"></i> settings</a><a class="dropdown-item" href="#"><i class="fas fa-out"></i> logout</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sign up --><br/>
+      <div class="container showproduct">
+        <div class="product card border-0 shadow-store">
+          <div class="row"> 
+            <!-- products images -->
+            <div class="col-lg-6">
+              <div class="show-cover m-2"><img class="img-fuild" src="imgs/products/woman/06.jpg"/></div>
+            </div>
+            <!-- ./ products images -->
+            <!-- products information-->
+            <div class="col-lg-6">
+              <div class="info m-2">
+                <h1 class="title">Jacket Hallwoine for lover </h1>
+                <p class="desc mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias iure, totam asperiores est voluptatum quaerat tempore ipsa quia libero quibusdam fuga modi numquam cupiditate tenetur quod voluptatem vel animi consequatur!</p>
+                <div class="price mb-4 d-flex"><span class="beforediscount ml-2">EGP 90</span><span class="afterdiscount ml-2">EGP 50</span>
+                  <!-- defualt price hidden -->
+                  <input class="ml-2 sameprice" type="hidden" value="50"/>
+                  <input class="form-control form-control-sm plusproduct ml-2" type="text" value="1"/>
+                </div>
+                <div class="control mt-2 mb-2"> 
+                  <button class="btn btn-outline-primary btn-sm addcart"><i class="fas fa-shopping-bag cart"></i> Add To Cart </button>
+                  <button class="btn btn-success btn-sm addbuy"> <i class="fas fa-shopping-cart"></i> Buy Now</button>
+                </div>
+              </div>
+              <!-- comments and fadeback -->
+              <div class="comments-fadeback mb-4 mt-4">
+                <h3 class="title">Comments <a href="#"> See more comments <i class="fas fa-arrow-right"></i> </a></h3>
+                <div class="comment d-flex card">
+                  <div class="avatar"> 
+                    <p class="name"><a href="#">Joliat Bandiam</a> <span>. 4.5 <i class="fas fa-star"></i></span></p><img class="rounded-circle" src="imgs/avatar/01.jpg"/>
+                  </div>
+                  <p class="desc">consectetur adipisicing elit. Molestias iure, totam asperiores est voluptatum quaerat tempore ipsa quia libero quibusdam fuga modi numquam cupiditate tenetur quod voluptatem vel animi </p>
+                </div>
+              </div>
+            </div>
+            <!-- ./ products information -->
+          </div>
+        </div>
+        <!-- aother products-->
+        <div class="aother-products card border-0 shadow-store mb-2 mt-3 p-2">
+          <h2 class="title">Recommended for you </h2>
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="aother-product">
+                <div class="overlay overlay-product"><a href="#show"><i class="fas fa-eye"></i></a></div>
+                <div class="cover"> <img src="imgs/products/woman/01.jpg"/></div>
+                <h3 class="desc">Pantalon With jacket dlivers </h3>
+                <p class="rate">4.5 <i class="fas fa-star"></i></p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="aother-product">
+                <div class="overlay overlay-product"><a href="#show"><i class="fas fa-eye"></i></a></div>
+                <div class="cover"> <img src="imgs/products/woman/02.jpg"/></div>
+                <h3 class="desc">Pantalon With jacket dlivers </h3>
+                <p class="rate">3.5 <i class="fas fa-star"></i></p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="aother-product">
+                <div class="overlay overlay-product"><a href="#show"><i class="fas fa-eye"></i></a></div>
+                <div class="cover"> <img src="imgs/products/woman/03.jpg"/></div>
+                <h3 class="desc">Pantalon With jacket dlivers </h3>
+                <p class="rate">1.5 <i class="fas fa-star"></i></p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="aother-product">
+                <div class="overlay overlay-product"><a href="#show"><i class="fas fa-eye"></i></a></div>
+                <div class="cover"> <img src="imgs/products/woman/04.jpg"/></div>
+                <h3 class="desc">Pantalon With jacket dlivers </h3>
+                <p class="rate">5.5 <i class="fas fa-star"></i> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- btn show your products on cart -->
+    <div class="show-cart"> <i class="fas fa-shopping-bag"> </i></div>
+    <!-- sidebar shopping cart -->
+    <div class="sidebarcart card border-0 shadow-store">
+      <h2 class="title">Your products </h2>
+      <div class="products mt-3">
+        <div class="cart"> 
+          <div class="overlay"><a class="mr-3 btn btn-outline-primary btn-sm" href="#show"><i class="fas fa-eye"></i> show </a><a class="mr-3 btn btn-outline-danger btn-sm delete" href="#close"><i class="fas fa-times"></i> delete</a></div>
+          <div class="bag-product">
+            <div class="cover-product"><img class="rounded-circle" src="imgs/products/woman/02.jpg"/></div>
+            <p class="title">Best Closth for Charthmes <span>$225</span></p>
+          </div>
+        </div>
+        <div class="cart"> 
+          <div class="overlay"><a class="mr-3 btn btn-outline-primary btn-sm" href="#show"><i class="fas fa-eye"></i> show </a><a class="mr-3 btn btn-outline-danger btn-sm delete" href="#close"><i class="fas fa-times"></i> delete</a></div>
+          <div class="bag-product">
+            <div class="cover-product"><img class="rounded-circle" src="imgs/products/woman/04.jpg"/></div>
+            <p class="title">Best Closth for Charthmes  <span>$225</span></p>
+          </div>
+        </div>
+        <hr class="mb-0"/>
+        <p class="total title m-2">Total $450</p>
+      </div>
+    </div>
+    <!-- loading for pages -->
+    <div class="loading-auto">
+      <h1>Store . </h1>
+      <div class="spinner-grow text-primary" role="status"><span class="sr-only">Loading...</span></div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!-- plugin (zoom image) => {return 'main.js' + 'zoom-image.js'} -->
+    <script src="js/plugin/zoom-image/zoom-image.js"></script>
+    <script src="js/plugin/zoom-image/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/store.js"></script>
+  </body>
+</html>

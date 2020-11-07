@@ -1,0 +1,61 @@
+- var pagename = 'Setup | Seller .'
+<! DOCTYPE html >
+html 
+  head
+    include pug/layouts/_head
+    title #{pagename}
+  body 
+    .store
+        // Sign up 
+        .container.setupuser.mt-5
+            h1.title Choose Your Favorite Stories
+            p.desc Waiting for Create your Store.....
+            .row 
+                .col-lg-4
+                    .card.border-0.p-2.Categories.mb-3.shadow-store.mt-3
+                        .logo
+                            img(src="imgs/categories/01.png")
+                        .info.text-center.mt-3
+                            h3 Light & Led 
+                .col-lg-4
+                    .card.border-0.p-2.Categories.mb-3.shadow-store.mt-3
+                        .logo
+                            img(src="imgs/categories/02.png")
+                        .info.text-center.mt-3
+                            h3 Tv
+                .col-lg-4
+                    .card.border-0.p-2.Categories.mb-3.shadow-store.mt-3
+                        .logo
+                            img(src="imgs/categories/03.jpg")
+                        .info.text-center.mt-3
+                            h3 Fashion
+                .col-lg-4
+                    .card.border-0.p-2.Categories.mb-3.shadow-store.mt-3
+                        .logo
+                            img(src="imgs/categories/04.png")
+                        .info.text-center.mt-3
+                            h3 Computers
+                .col-lg-4
+                    .card.border-0.p-2.Categories.mb-3.shadow-store.mt-3
+                        .logo
+                            img(src="imgs/categories/05.jpg")
+                        .info.text-center.mt-3
+                            h3 Accessories
+                .col-lg-4
+                    .card.border-0.p-2.Categories.mb-3.shadow-store.mt-3
+                        .logo
+                            img(src="imgs/categories/06.jpeg")
+                        .info.text-center.mt-3
+                            h3 Books
+                .col-lg-12  
+                    a(href="#home", disabled).btn.btn-primary.btn-sm.float-right.mt-4 Done
+    // loading for setup
+    .loading_setup
+        h2 Store . 
+        p.desc Waiting for Organize your library.....
+        .spinner-grow(role="status").text-primary
+            span.sr-only Loading...
+    // loading for pages 
+    include pug/components/loading.pug 
+
+    include pug/layouts/_footer

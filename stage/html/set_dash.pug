@@ -1,0 +1,68 @@
+- var pagename = 'Settings | Online Store .'
+<! DOCTYPE html >
+html 
+  head
+    include pug/layouts/_head
+    title #{pagename}
+  body 
+    .store
+        // sidebar 
+        include pug/layouts/_slidbar.pug
+        // store dashboard  
+        .container-fuild.store-dashboard
+        
+            // navbar store 
+            include pug/pages/_navbars.pug
+            // content 
+            .content 
+                .header.mb-3.mt-3
+                    h3.title-header Dashboard / settings
+                    a(href="store.html").btn.btn-outline-success.mr-2.btn-sm #[i.fas.fa-eye] view store
+                .container 
+                    .card-border-0.shadow-store.p-2.mt-5.mb-2.settings
+                      p.title Information
+                      .row
+                        .col-lg-6
+                          .form-group
+                            label Store name 
+                            input(type="text",value="cofflanta").form-control.form-control-md 
+                        .col-lg-6
+                          .form-group
+                            label Address  
+                            input(type="text",value="Newyork City - street 12 ").form-control.form-control-md 
+                        .col-lg-12
+                          .form-group
+                            label Description  
+                            textarea().form-control.form-control-md Store for shopping  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, id animi. Magni.
+
+                        .col-lg-4
+                          .form-group
+                            label Currency   
+                            select.form-control.form-control-sm 
+                              option Chosse... 
+                              option(value="USD") USD
+                              option(value="EGY" selected) EGY
+                              option(value="FSR") FSR
+                        .col-lg-4
+                          .form-group
+                            label Country    
+                            select.form-control.form-control-sm 
+                              option Chosse... 
+                              option(value="USD") Egypt
+                              option(value="EGY" selected) USA
+                              option(value="FSR") Nzlanda
+                        .col-lg-4
+                          .form-group
+                            label Time Area    
+                            select.form-control.form-control-sm 
+                              option Chosse... 
+                              option(value="USD") 20:00 time zone
+                              option(value="EGY" selected) 20:00 time zone
+                              option(value="FSR") 20:00 time zone
+                        .col-lg-12
+                          button.btn.btn-primary.btn-sm.float-right #[i.fas.fa-cog] Save 
+                    
+            // ./ content 
+    // loading for pages 
+    include pug/components/loading.pug 
+    include pug/layouts/_footer

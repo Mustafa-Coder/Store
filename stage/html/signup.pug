@@ -1,0 +1,48 @@
+- var pagename = 'Sign up | Store .'
+<! DOCTYPE html >
+html 
+  head
+    include pug/layouts/_head
+    title #{pagename}
+  body 
+    .store
+        // Sign up 
+        .container-fuild
+            .card.p-2.signup
+                h1.title Sign Up 
+                p.desc Make Yourself Wonderful Store . 
+                hr.mt-0.mb-2
+                .form-group.d-flex 
+                    label(for="email") Email 
+                    input(type="email", class="form-control form-control-md ",placeholder="emailoffical@example.com", require)
+                .form-group.d-flex 
+                    label(for="type") Type Account 
+                    .buyer.d-flex
+                        input(type="radio").m-2
+                        label Buyer
+                    .seller.d-flex
+                        input(type="radio").m-2
+                        label Seller
+                .form-group.d-flex.storename
+                    label(for="pass") Store Name  
+                    input(type="text", class="form-control form-control-md ",placeholder="Create Store")
+                .form-group.d-flex.username
+                    label(for="user") Username  
+                    input(type="text", class="form-control form-control-md ",placeholder="username")
+                .form-group.d-flex 
+                    label(for="pass") Password
+                    input(type="password", class="form-control form-control-md ",placeholder="Create password")
+                hr.m-0
+                .form-group.d-flex.mt-2
+                    input(type="radio").m-2
+                    p I agree with #[a(href="setupseller.html") terms and conditions ]
+                button.btn.btn-primary.btn-md.donesignup Next
+            br
+            .information
+                ul.list-unstyled.d-flex 
+                    li.p-2 #[a(href="#")] Helper  
+                    li.p-2 #[a(href="#")] Blog  
+                    li.p-2 #[a(href="#")] Store &copy; 2020  
+                
+       
+    include pug/layouts/_footer

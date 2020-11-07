@@ -1,0 +1,33 @@
+- var pagename = 'Sign In | Store .'
+<! DOCTYPE html >
+html 
+  head
+    include pug/layouts/_head
+    title #{pagename}
+  body 
+    .store
+        // Sign up 
+        .container-fuild
+            .card.p-2.signup
+                h1.title Sign In 
+                p.desc.mb-3 Welcome Back to Store . 
+                .form-group.d-flex 
+                    label(for="email") Email 
+                    input(type="email", class="form-control form-control-md ",placeholder="emailoffical@example.com", require)
+                .form-group.d-flex 
+                    label(for="pass") Password
+                    input(type="password", class="form-control form-control-md ",placeholder="password")
+                hr.m-0
+                .form-group.d-flex.mt-2
+                    input(type="checkbox").m-2
+                    p Remember Me 
+                button.btn.btn-primary.btn-md.donesignup Login
+            br
+            .information
+                ul.list-unstyled.d-flex 
+                    li.p-2 #[a(href="#")] Helper  
+                    li.p-2 #[a(href="#")] Blog  
+                    li.p-2 #[a(href="#")] Store &copy; 2020  
+                
+       
+    include pug/layouts/_footer

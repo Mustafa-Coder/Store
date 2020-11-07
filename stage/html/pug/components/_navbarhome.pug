@@ -1,0 +1,20 @@
+.navhome
+    .logo
+        img(src="imgs/logos/01.png").rounded-circle 
+    .search-form 
+        form.form-group
+            input(type="search",placeholder="Search...").form-control.form-control-md
+    .profile
+        i.fas.fa-bell.icon
+        .fas.fa-shopping-bag.icon
+        .user
+            div.btn-group
+                button( type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                    img(src="imgs/avatar/01.jpg").rounded-circle 
+                    |  Mustafa Ahmed
+                div(class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId")
+                    a(class="dropdown-item" href="#") #[i.fas.fa-user] profile 
+                    a(class="dropdown-item" href="dashstore.html") #[i.fas.fa-store] Dashboard store
+                    a(class="dropdown-item" href="#") #[i.fas.fa-eye] View store
+                    a(class="dropdown-item" href="#") #[i.fas.fa-cog] settings
+                    a(class="dropdown-item" href="#") #[i.fas.fa-out] logout

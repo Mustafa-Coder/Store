@@ -1,0 +1,47 @@
+.store {
+    .setupseller {
+        width: 700px;
+        margin: 10% auto;
+        border: 0;
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        p {
+            font-size: .9rem;
+        }
+
+        .form-group {
+            label {
+                color: #6d7884;
+                margin: 5px;
+            }
+        }
+
+        .btn-primary {
+            width: 150px;
+            width: 150px;
+            margin-left: auto;
+        }
+        }
+}
+
+// landingpage setyp 
+.loading_setup{
+    position: fixed;
+    top: 0;
+    left: 210rem; 
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 20%;
+    background-color: white;
+    z-index: 1;
+    will-change: left;
+    transition: .5s;
+}
+
+.loading_setup_active {
+    left: 0 !important;
+}

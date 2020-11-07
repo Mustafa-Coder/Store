@@ -1,0 +1,159 @@
+.store {
+    .showproduct {
+        margin: 5% auto;
+        .product {
+            .show-cover {
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 450px;
+                    object-fit: cover;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+
+            // info 
+            .info {
+                h1 {
+                    text-transform: uppercase;
+                    margin-top: 31px;
+                }
+
+                .desc {
+                    font-size: 14px;
+                    color: #a4adb5;
+                }
+
+                .price {
+                    .beforediscount {
+                        margin-right: 10px;
+                        text-decoration-line: line-through;
+                        color: #d0d0d0;
+                    }
+
+                    .afterdiscount {
+                        font-weight: 600;
+                    }
+
+                    .form-control {
+                        width: 62px;
+                    }
+                }
+
+                .control {
+                    
+                    .spinner-grow {
+                        position: relative;
+                        top: 7px;
+                        left: 10px;
+                    }
+                }
+            }
+
+            // comments-fadeback 
+            .comments-fadeback  {
+                .title {
+                    font-size: 14px;
+                }
+                .comment {
+                    border-color: #e6eff7;
+                    margin-right: 5px;
+                    .avatar {
+                        img {
+                            @include avatar(40px,40px,7px,block);
+                        }
+                        .name {
+                            position: absolute;
+                            left: 56px;
+                            top: 12px;
+                            a {
+                                
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: black;
+                                text-decoration: none;
+                                transition: .4s;
+                            
+                            }
+
+                            span {
+                                font-size: 13px;
+                                color: #dcdc1e;
+                            }
+                        }
+                    }
+
+                    .desc {
+                        margin-left: 3rem;
+                        color: #6e797d;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        // aother products 
+        .aother-products {
+            .title {
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+
+            .aother-product {
+                margin: auto;
+                text-align: center;
+                border: 1px solid #dee1e27d;
+                border-radius: 5px;
+                overflow: hidden;
+                position: relative;
+                transition: .5s ease;
+                &:hover {
+                    box-shadow: 0 20px 10px $shadow-color;
+                }
+                .cover {
+                    img {
+                        width: 100%;
+                        height: 200px;
+                        object-fit: cover;
+                    }
+                }
+
+                .desc {
+                    font-size: 16px;
+                    margin-top: 15px;
+                }
+
+                .rate {
+                    font-size: 14px;
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    left: -250px;
+                    will-change: left;
+                    bottom: 0;
+                    background-color: #fbfdffcc;
+                    z-index: 1;
+                    padding: 5.5rem;
+                    font-size: 2rem;
+                    a {
+                        color: #2196F3;
+                    }
+                    transition: .5s ease;
+                }
+
+                .activenow {
+                    left: 0px !important;
+                }
+
+            }
+
+        }
+    }
+    .add-cart-rotate {
+        transform: rotateZ(25deg) !important;
+    }
+}

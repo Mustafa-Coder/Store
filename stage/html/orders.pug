@@ -1,0 +1,68 @@
+- var pagename = 'Orders | Online Store .'
+<! DOCTYPE html >
+html 
+  head
+    include pug/layouts/_head
+    title #{pagename}
+  body 
+    .store
+        // sidebar 
+        include pug/layouts/_slidbar.pug
+        // store dashboard  
+        .container-fuild.store-dashboard.orders
+            // navbar store 
+            include pug/pages/_navbars.pug
+            // content 
+            .content.p-3
+                .header.mb-3 
+                    h3.title-header Orders 
+                    a(href="addorder.html").btn.btn-outline-primary #[i.fas.fa-plus]
+                    a(href="landingstore.html").btn.btn-outline-success.mr-5.btn-sm #[i.fas.fa-eye] view store 
+                .order-table.card.border-0.shadow-store.p-2
+                    table.table.border.table-responsive.w-100
+                        thead
+                            th Cover
+                            th Title
+                            th  Category 
+                            th status 
+                            th Control 
+                        tbody
+                            tr
+                                td #[img(src="imgs/products/woman/01.jpg").rounded-circle.avatar-circle]
+                                td  Pantalon Fashion 2020
+                                td Men 
+                                td #[span pending] 
+                                td #[a(href="#edit").btn.btn-outline-success.btn-sm.mr-2  #[i.fas.fa-edit] edit ] 
+                                    a(href="#del").btn.btn-outline-danger.btn-sm.mr-2 #[i.fas.fa-trash] delete
+                                    a(href="#del").btn.btn-outline-primary.btn-sm.mr-2 #[i.fas.fa-eye] show 
+                            tr
+                                td #[img(src="imgs/products/woman/02.jpg").rounded-circle.avatar-circle]
+                                td  Pantalon Woman 2021
+                                td Woman 
+                                td #[span pending] 
+                                td #[a(href="#edit").btn.btn-outline-success.btn-sm.mr-2  #[i.fas.fa-edit] edit ] 
+                                    a(href="#del").btn.btn-outline-danger.btn-sm.mr-2 #[i.fas.fa-trash] delete
+                                    a(href="showproduct.html").btn.btn-outline-primary.btn-sm.mr-2 #[i.fas.fa-eye] show 
+                            tr
+                                td #[img(src="imgs/products/woman/03.jpg").rounded-circle.avatar-circle]
+                                td  Pantalon Lejend 2020
+                                td Men  
+                                td #[span pending] 
+                                td #[a(href="#edit").btn.btn-outline-success.btn-sm.mr-2  #[i.fas.fa-edit] edit ] 
+                                    a(href="#del").btn.btn-outline-danger.btn-sm.mr-2 #[i.fas.fa-trash] delete
+                                    a(href="#del").btn.btn-outline-primary.btn-sm.mr-2 #[i.fas.fa-eye] show 
+                            tr
+                                td #[img(src="imgs/products/woman/04.jpg").rounded-circle.avatar-circle]
+                                td  Jacket Fashion Cotton  2020
+                                td Men 
+                                td #[span pending] 
+                                td #[a(href="#edit").btn.btn-outline-success.btn-sm.mr-2  #[i.fas.fa-edit] edit ] 
+                                    a(href="#del").btn.btn-outline-danger.btn-sm.mr-2 #[i.fas.fa-trash] delete
+                                    a(href="#del").btn.btn-outline-primary.btn-sm.mr-2 #[i.fas.fa-eye] show 
+
+
+                    
+            // ./ content 
+    // loading for pages 
+    include pug/components/loading.pug 
+    include pug/layouts/_footer

@@ -1,0 +1,75 @@
+- var pagename = 'Orders | Online Store .'
+<! DOCTYPE html >
+html 
+  head
+    include pug/layouts/_head
+    title #{pagename}
+  body 
+    .store
+        // sidebar 
+        include pug/layouts/_slidbar.pug
+        // store dashboard  
+        .container-fuild.store-dashboard.addorders
+            // navbar store 
+            include pug/pages/_navbars.pug
+            // content 
+            .content.p-3
+                .header.mb-3 
+                    h3.title-header Add Orders 
+                    a(href="addorder.html").btn.btn-outline-primary #[i.fas.fa-list]
+                    a(href="landingstore.html").btn.btn-outline-success.mr-5.btn-sm #[i.fas.fa-eye] view store 
+            .container 
+                .neworder.card.p-2.shadow-store.border-0
+                    .form-group 
+                        label.title Title order 
+                        input(type="text",placeholder="New shose").form-control.form-control-md.border-0
+                    .form-group 
+                        label.title Description 
+                        textarea.form-control.border-0(placeholder="Responsibility")
+                    .form-group 
+                        p.title Pricing 
+                        .row
+                            .col-lg-4   
+                                .form 
+                                    label.title The price before discount 
+                                    input(type="text",placeholder="00.00").form-control.form-control-sm
+                            .col-lg-4   
+                                .form 
+                                    label.title The price after discount 
+                                    input(type="text",placeholder="00.00").form-control.form-control-sm
+                            .col-lg-4   
+                                .form 
+                                    label.title The final price 
+                                    input(type="text",value="50 USD", disabled).form-control.form-control-sm
+                    // categories 
+                    .row 
+                        .col-lg-4 
+                            .form-group 
+                                label.title categories 
+                                select.form-control.form-control-sm 
+                                    option(selected) Chosse...
+                                    option(value="") Fashion 
+                                    option(value="") Watches 
+                                    option(value="") Computers 
+                        .col-lg-4 
+                            .form-group 
+                                label.title items 
+                                select.form-control.form-control-sm 
+                                    option(selected) Chosse...
+                                    option(value="") Hp 
+                                    option(value="") Dell 
+                                    option(value="") leneovo 
+                        .col-lg-4 
+                            .form-group 
+                                label.title Time 
+                                input(type="text",placeholder="dd/mm/yyyy").form-control.form-control-sm 
+
+                    .form-group 
+                        button.btn.btn-primary.btn-sm.float-right Create
+
+
+                    
+            // ./ content 
+    // loading for pages 
+    include pug/components/loading.pug 
+    include pug/layouts/_footer

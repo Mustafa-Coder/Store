@@ -1,0 +1,61 @@
+- var pagename = 'Dashboard | Online Store .'
+<! DOCTYPE html >
+html 
+  head
+    include pug/layouts/_head
+    title #{pagename}
+  body 
+    .store
+        // sidebar 
+        include pug/layouts/_slidbar.pug
+        // store dashboard  
+        .container-fuild.store-dashboard
+            // navbar store 
+            include pug/pages/_navbars.pug
+            // content 
+            .content.p-3
+                .header.mb-3 
+                    h3.title-header Dashboard 
+                    a(href="#").btn.btn-outline-primary #[i.fas.fa-plus]
+                    a(href="store.html").btn.btn-outline-success.mr-5.btn-sm #[i.fas.fa-eye] view store 
+                .row 
+                    .col-lg-4.col-md-12.col-sm-12
+                        .card.news.shadow-store.mb-3
+                            img.card-img-top(src='imgs/bg/01.webp' alt='news')
+                            .card-body
+                                h5.card-title How to create wonderful online Store .
+                                p.card-text
+                                    | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                                a.btn.btn-primary(href='#') Get Help ?
+                    .col-lg-3.col-md-12
+                        .card.news.shadow-store.mb-3
+                            img.card-img-top(src='imgs/dash/02.svg' alt='news').p-3
+                            .card-body
+                                h5.card-title How to create wonderful online Store .
+                                p.card-text
+                                    | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                                a.btn.btn-outline-primary.btn-sm(href='#') #[i.fas.fa-plus] Create New Products
+                    // Count data about store 
+                    .col-lg-5.col-md-12
+                        .row 
+                            .col-lg-6.col-md-12.col-sm-12
+                                .card.p-3.border-0.mb-3.counts
+                                    h3 Buyers
+                                    p.count #[i.fas.fa-users] 700
+                            .col-lg-6.col-md-12.col-sm-12
+                                .card.p-3.border-0.mb-3.counts
+                                    h3 Products
+                                    p.count  #[i.fas.fa-box] 60
+                            .col-lg-12
+                                .card.p-3.border-0.mb-3.employees
+                                    h3 Mention your employees 
+                                    .cover 
+                                        img(src="imgs/dash/06.svg").rounded-circle 
+                                        p Remind your employees, to help you with these projects and their management
+                                    a(href="#").btn.btn-outline-primary.btn-sm #[i.fas.fa-plus] Mention Now 
+
+                    
+            // ./ content 
+    // loading for pages 
+    include pug/components/loading.pug 
+    include pug/layouts/_footer
