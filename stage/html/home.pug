@@ -10,43 +10,33 @@ html
         include pug/components/_navbarhome
         // show Stores 
         .container-fuild.p-5
-            // categories 
-            div.jumbotron.jumbotron-fluid 
-              div.container
-                h1 Fluid jumbo heading
-                hr.my-2
-                p More info
-                a(class="btn btn-primary btn-lg" href="Jumbo action link" role="button") Jumbo action name
-          
-                
-            // ./ categories 
-            // stores
-            br
-            p.title(style="margin: 12px 0 0;") Lots of shops waiting for you 
-            .row 
-              .col-lg-3
-                .card.one-store.border-0.mt-3 
-                  .store-info.d-flex
-                    .store-logo 
-                      img(src="imgs/categories/07.jpg").rounded-circle
-                    .info
-                      h2.store-title Flowrpom
-                      p.desc Store for flowers
-                      //- - var stars = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star','fas fa-star']
-                      //- .rate 
-                      //-   each star in stars
-                      //-     i(class=star)
-                  .product
-                    .product-cover 
-                      img(src="imgs/categories/01.png")
-                    .product-info 
-                      h2.product-title Good flower for your house 
-                      p.desc
-                      .product-details 
-                        a(src="#show").btn.btn-sm #[i.fas.fa-eye ] Show
-                        a(src="#show").btn.btn-sm #[i.fas.fa-shopping-bag ] Add to cart 
-                        a(src="#show").btn.btn-sm #[i.fas.fa-star ] 
-              
+          .row
+            .col-lg-4
+              .banner.card.border-0.mb-3.mt-2
+                .cover
+                  img(src="imgs/products/men/02.jpg")
+                .info 
+                  h2 Woman Fasgion and kids 
+                  a(href="#").btn.btn-light.btn-sm Show
+            .col-lg-8
+              .banner.card.border-0.mb-3.mt-2
+                .cover
+                  img(src="imgs/products/men/01.jpg")
+                .info 
+                  h2 More Control 
+                  a(href="#").btn.btn-light.btn-sm Show
+            .col-lg-12
+              .banner.card.border-0.mb-3.mt-2
+                .cover
+                  img(src="imgs/products/men/03.jpg")
+                .info 
+                  h2 More Control 
+                  a(href="#").btn.btn-light.btn-sm Show
+                  
+        
+
+    // All menu Modals 
+    include pug/components/menu/_linkone        
     // btn show your products on cart 
     .show-cart 
       i.fas.fa-shopping-bag 

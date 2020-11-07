@@ -1,0 +1,30 @@
+.linkones {
+    position: absolute;
+    top: 48px ;
+    width: 100%;
+    background-color: #ffffffc4;
+    z-index: -5;
+    opacity: 0;
+    will-change: top;
+    transition: .6s ease;
+    h2 {
+        font-size: 15px;
+    }
+
+    ul {
+        li {
+            a {
+                font-size: 15px;
+                color: black;
+                .fa-arrow-right {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.topunset {
+    opacity:1 !important;
+    z-index: 5 !important;
+}

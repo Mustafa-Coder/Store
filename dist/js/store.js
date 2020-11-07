@@ -49,8 +49,17 @@ $(".Categories").on("click",function () {
         $(".cart").fadeOut(100);
     });
     // ./ shopping card 
-
- 
+    // links header 
+    $(".menu ul li").on("click",function () {
+        $(this).toggleClass("activelink");
+    });
+    // show categories menu 
+    $(".linkone").on("click",function () {
+        $(".linkones").toggleClass("topunset");
+    });
+    $(".linkones").on("blur",function () {
+        $(this).removeClass("topunset");
+    });
 // ./ home page 
 
 // show product 
@@ -93,8 +102,6 @@ $(".addbuy").on("click",function () {
     }, 1000);
 
 });
-
-
 
 
 // ./ show product 
