@@ -1,0 +1,82 @@
+    .footer-links {
+        background-color: black;
+        color: white;
+        clip-path: polygon(30% 8%, 71% 4%, 100% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);
+        .logo {
+            font-weight: 700;
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+
+        .desc {
+            font-size: 15px;
+            color: gray;
+            width: 450px;
+        }
+
+        .copy {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .social {
+            display: flex;
+            margin-top: 15px;
+            li {
+                margin-left: 15px;
+                font-size: 25px;
+
+                a {
+                    text-decoration: none;
+                    color: #808080f7;
+                }
+            }
+        }
+
+        .pages {
+            margin-left: 40px;
+            li {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transition: .3s;
+                    opacity: .8;
+                    &:hover {
+                        opacity: 1;
+
+                    }
+                }
+            }
+        }
+
+        hr {
+            color: gray;
+        }
+
+        .form-group  {
+            label {
+                font-size: 15px;
+                font-weight: 600;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .Subscriber {
+                .form-control {
+                    border: 0;
+                    border-radius: 0;
+                    width: 450px;
+                }
+
+                .btn-primary {
+                    width: 100;
+                    border: 0;
+                    border-radius: 0;
+                    background-color: #FFEB3B;
+                    color: black;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }

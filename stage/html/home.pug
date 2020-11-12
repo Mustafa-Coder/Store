@@ -13,26 +13,89 @@ html
           .row
             .col-lg-4
               .banner.card.border-0.mb-3.mt-2
+                .control-overlay
+                  a(href="#") Join us now #[i.fas.fa-shopping-bag] 
                 .cover
-                  img(src="imgs/products/men/02.jpg")
+                  img(src="imgs/products/men/ads.jpg")
                 .info 
                   h2 Woman Fasgion and kids 
-                  a(href="#").btn.btn-light.btn-sm Show
+                  //- a(href="#").btn.btn-light.btn-sm Show
             .col-lg-8
               .banner.card.border-0.mb-3.mt-2
+                .control-overlay
+                  a(href="#")  Traveler Modern outside
                 .cover
                   img(src="imgs/products/men/01.jpg")
                 .info 
-                  h2 More Control 
-                  a(href="#").btn.btn-light.btn-sm Show
-            .col-lg-12
-              .banner.card.border-0.mb-3.mt-2
-                .cover
-                  img(src="imgs/products/men/03.jpg")
-                .info 
-                  h2 More Control 
-                  a(href="#").btn.btn-light.btn-sm Show
-                  
+                  h2 Traveler Modern outside
+                  //- a(href="#").btn.btn-light.btn-sm Show
+            //- .col-lg-12
+            //-   .banner.card.border-0.mb-3.mt-2
+            //-     .control-overlay
+            //-       a(href="#") Motivation For Fitness
+            //-     .cover
+            //-       img(src="imgs/products/men/03.jpg")
+            //-     .info 
+            //-       h2 Motivation For Fitness
+            //-       //- a(href="#").btn.btn-light.btn-sm Show
+          // products
+          h2.title-products The New Storm 
+          .products
+              .row 
+                  .col-lg-4
+                    .product
+                      .cover 
+                          .control
+                              a(href="showproduct.html") #[i.fas.fa-eye]
+                          img(src="imgs/products/woman/08.jpg")
+                      .info 
+                        h2.title Pandon homld Great
+                        p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis ad! Tempora dolore reprehenderit explicabo nesciunt eveniet omnis! Enim, animi.
+                  .col-lg-4
+                    .product
+                      .cover 
+                          .control
+                              a(href="#") #[i.fas.fa-eye]
+                          img(src="imgs/products/woman/09.jpg")
+                      .info 
+                        h2.title Pandon homld Great
+                        p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis ad! Tempora dolore reprehenderit explicabo nesciunt eveniet omnis! Enim, animi.
+                  .col-lg-4
+                    .product
+                      .cover 
+                          .control
+                              a(href="#") #[i.fas.fa-eye]
+                          img(src="imgs/products/woman/010.jpg")
+                      .info 
+                        h2.title Pandon homld Great
+                        p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis ad! Tempora dolore reprehenderit explicabo nesciunt eveniet omnis! Enim, animi.   
+                  .col-lg-4
+                    .product
+                      .cover 
+                          .control
+                              a(href="#") #[i.fas.fa-eye]
+                          img(src="imgs/products/woman/011.jpg")
+                      .info 
+                        h2.title Pandon homld Great
+                        p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis ad! Tempora dolore reprehenderit explicabo nesciunt eveniet omnis! Enim, animi.
+                  .col-lg-4
+                    .product
+                      .cover 
+                          .control
+                              a(href="#") #[i.fas.fa-eye]
+                          img(src="imgs/products/woman/012.jpg")
+                      .info 
+                        h2.title Pandon homld Great
+                        p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis ad! Tempora dolore reprehenderit explicabo nesciunt eveniet omnis! Enim, animi.
+                  .col-lg-4
+                    .product
+                      .cover 
+                          .control
+                              a(href="#") #[i.fas.fa-eye]
+                          img(src="imgs/products/woman/013.jpg")
+                      .info 
+                        h2.title Pandon homld Great
+                        p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis ad! Tempora dolore reprehenderit explicabo nesciunt eveniet omnis! Enim, animi.   
         
 
     // All menu Modals 
@@ -45,4 +108,6 @@ html
     // loading 
     include pug/components/loading  
     // footer 
+    include pug/components/footer
+    // footer links script 
     include pug/layouts/_footer

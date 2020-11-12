@@ -1,15 +1,21 @@
 .header {
     background-color: white;
-    height: 50px;
-    position: relative;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     .logo {
         font-size: 20px;
-        padding: 10px;
+        padding: 20px;
         float: left;
+        a {
+            text-decoration: none;
+            color: black;
+        }
     }
 
     .menu {
-        padding: 9px;
+        padding: 18px;
         text-align: center;
         ul {
             display: inline-flex;
@@ -24,7 +30,7 @@
 
     .shop {
         position: absolute;
-        top: 11px;
+        top: 20px;
         right: 20px;
         ul {
             display: inline-flex;
