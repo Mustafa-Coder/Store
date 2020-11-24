@@ -1,0 +1,72 @@
+.store {
+    .logo_store {
+        width: 100px;
+        height: 100px;
+        margin: 1% auto;
+        display: block;
+        transform: rotate(90deg);
+        filter: grayscale(0);
+        animation: logo_effect 2s ease infinite;
+        @keyframes logo_effect {
+            0%{filter: grayscale(0);}
+            100%{filter: grayscale(1);}
+        }
+    }
+
+    .title_home {
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 3% ;
+    }
+
+    .desc_home {
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        margin: auto;
+        width: 360px;
+        color: #596a77;
+    }
+
+    .line {
+        width: 150px;
+    }
+
+    // categories 
+    .categories {
+        .category {
+            text-decoration: none;
+            color: black;
+            transition: .4s;
+
+            //cover 
+            .cover_cat {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                margin: auto;
+            }
+
+            // desc 
+            .title_cat {
+                font-size: 25px;
+                text-align: center;
+            }
+
+            .desc_cat {
+                text-align: center;
+                font-size: 14px;
+                color: #596a77;
+            }
+            
+            &:hover {
+                transition: .4s;
+                transform: translateY(-10px);
+                box-shadow: 0 5px 10px rgba(154,160,185,.025), 0 15px 40px rgba(166,173,201,.2);
+            }
+        }
+
+        
+    }
+}

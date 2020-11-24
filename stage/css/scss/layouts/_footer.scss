@@ -2,6 +2,9 @@
         background-color: black;
         color: white;
         clip-path: polygon(30% 8%, 71% 4%, 100% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);
+        position: absolute;
+        width: 100%;
+        // bottom: -350px;
         .logo {
             font-weight: 700;
             font-size: 35px;

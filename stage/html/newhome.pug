@@ -1,0 +1,52 @@
+- var pagename = 'Store - Home '
+<! DOCTYPE html >
+html 
+  head
+    include pug/layouts/_head
+    title #{pagename}
+  body 
+    .store
+        // navbar home 
+        include pug/components/_navbarhome
+        // show Stores 
+        img(src="imgs/logos/01.png").logo_store 
+        h2.title_home Choose the department you want to market in
+        p.desc_home We provide you with more sections, to shop in all stores of the world while you are at your home.
+        hr.line
+        // Categroies 
+        .container.categories.mb-5.mt-5
+            .row 
+                .col-lg-3 
+                    a(href="stores.html").card.border-0.p-3.category
+                        img(class="cover_cat",src="imgs/categories/08.jpg")
+                        h1.title_cat Men
+                        p.desc_cat Browse all the stores that have everything a man needs in his day
+                .col-lg-3 
+                    a(href="/Categories/all/key=home").card.border-0.p-3.category
+                        img(class="cover_cat",src="imgs/categories/09.jpg")
+                        h1.title_cat Woman
+                        p.desc_cat Browse all the stores that have everything a man needs in his day
+                .col-lg-3 
+                    a(href="/Categories/all/key=home").card.border-0.p-3.category
+                        img(class="cover_cat",src="imgs/categories/010.png")
+                        h1.title_cat Kids
+                        p.desc_cat Browse all the stores that have everything a man needs in his day
+                .col-lg-3 
+                    a(href="/Categories/all/key=home").card.border-0.p-3.category
+                        img(class="cover_cat",src="imgs/categories/011.jpg")
+                        h1.title_cat Sports
+                        p.desc_cat Browse all the stores that have everything a man needs in his day
+
+    // All menu Modals 
+    include pug/components/menu/_linkone        
+    // btn show your products on cart 
+    .show-cart 
+        i.fas.fa-shopping-bag 
+    // sidebar shopping cart 
+    include pug/components/_sidebarcart  
+    // loading 
+    include pug/components/loading  
+    // footer 
+    include pug/components/footer
+    // footer links script 
+    include pug/layouts/_footer

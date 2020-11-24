@@ -1,0 +1,72 @@
+.store {
+    // stores 
+    .stores {
+        // info_search 
+        .info_search {
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+            height: 53px;
+            .title_page {
+                font-size: 15px;
+                font-weight: 600;
+                margin-top: 11px;
+                margin-left: 11px;
+                margin-bottom: 0;
+                .fa-info {
+                    width: 17px;
+                    height: 17px;
+                    background: #e4e4e4;
+                    border-radius: 100%;
+                    padding: 4px;
+                    color: gray;
+                    border: 1px dotted;
+                    cursor: pointer;
+                }
+            }
+            .form-group {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                width: 450px;
+            }
+        }
+    }
+
+    .store {
+        text-decoration: none;
+        transition: .5s;
+        img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            top: -40px;
+            border: 4px solid #f7f9fb;
+        }
+
+        .title_store {
+            margin-top: 50px;
+            font-size: 25px;
+            margin-left: 15px;
+            color: black;
+        }
+
+        .desc_store {
+            font-size: 14px;
+            width: 250px;
+            margin-left: 21px;
+            color: #455c6fa3;
+        }
+
+        .rate {
+            padding: 7px;
+            color: #f4d436;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+            transition: .5s;
+        }
+    }
+}

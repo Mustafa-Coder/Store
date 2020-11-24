@@ -1,0 +1,54 @@
+- var pagename = 'Store - Stores '
+<! DOCTYPE html >
+html 
+  head
+    include pug/layouts/_head
+    title #{pagename}
+  body 
+    .store
+        // navbar home 
+        include pug/components/_navbarhome
+        // stores 
+        .container-fuild.stores 
+            .row
+                // stores 500px screen 
+                .col-lg-8.mt-5.mb-5
+                    .info_search.mb-5
+                        p.title_page Stores #[i.fas.fa-info]
+                        .form-group
+                            input(type="search").form-control.form-control-md
+                    // show stores 
+                    .row 
+                        // one store 
+                        - var arr = [1,2,3,4,5,6,7,8,9]
+                        - var img_store = ['02','03','04','05']
+                            
+                        each arrs in arr 
+                            .col-lg-4.mb-5
+                                a(href="store").card.border-0.pt-2.store
+                                    each image in img_store
+                                        img(src="imgs/store/"+image+".png").posi_abs
+                                    h2.title_store Adidas
+                                    p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                    - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
+                                    .rate 
+                                        each icon in iconstar 
+                                            i(class=icon)
+                // categories 400px screen
+                .col-lg-4.mt-5.mb-5
+                    .info_search.mb-5
+                        p.title_page Categories #[i.fas.fa-info]
+
+    // All menu Modals 
+    include pug/components/menu/_linkone        
+    // btn show your products on cart 
+    .show-cart 
+        i.fas.fa-shopping-bag 
+    // sidebar shopping cart 
+    include pug/components/_sidebarcart  
+    // loading 
+    include pug/components/loading  
+    // footer 
+    include pug/components/footer
+    // footer links script 
+    include pug/layouts/_footer
