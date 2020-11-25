@@ -11,6 +11,22 @@ html
         // stores 
         .container-fuild.stores 
             .row
+                // categories 400px screen
+                .col-lg-4.mt-5.mb-5
+                    .info_search.mb-5
+                        p.title_page Categories #[i.fas.fa-info]
+                    .cats 
+                        ul.list-unstyled
+                            li #[a(href="#") All Shops #[span.count (1k)]]
+                            li #[a(href="#") Sports #[span.count (25)]]
+                            li #[a(href="#") Football #[span.count (25)]]
+                            li #[a(href="#") Skateboarding #[span.count (25)]]
+                            li #[a(href="#") Golf #[span.count (25)]]
+                            li #[a(href="#") Artsy fashion #[span.count (25)]]
+                            li #[a(href="#") Sexy fashion #[span.count (15)]]
+                            li #[a(href="#") Boxer Men #[span.count (225)] ]
+                            li #[a(href="#") Watchs #[span.count (105)]]
+                            li #[a(href="#") Decoration #[span.count (25)]]
                 // stores 500px screen 
                 .col-lg-8.mt-5.mb-5
                     .info_search.mb-5
@@ -20,24 +36,42 @@ html
                     // show stores 
                     .row 
                         // one store 
-                        - var arr = [1,2,3,4,5,6,7,8,9]
-                        - var img_store = ['02','03','04','05']
-                            
-                        each arrs in arr 
-                            .col-lg-4.mb-5
-                                a(href="store").card.border-0.pt-2.store
-                                    each image in img_store
-                                        img(src="imgs/store/"+image+".png").posi_abs
-                                    h2.title_store Adidas
-                                    p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-                                    - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
-                                    .rate 
-                                        each icon in iconstar 
-                                            i(class=icon)
-                // categories 400px screen
-                .col-lg-4.mt-5.mb-5
-                    .info_search.mb-5
-                        p.title_page Categories #[i.fas.fa-info]
+                        .col-lg-4.mb-5
+                            a(href="store").card.border-0.pt-2.store
+                                img(src="imgs/store/02.png").posi_abs
+                                h2.title_store GlowFira
+                                p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
+                                .rate 
+                                    each icon in iconstar 
+                                        i(class=icon)
+                        .col-lg-4.mb-5
+                            a(href="home.html").card.border-0.pt-2.store
+                                img(src="imgs/store/03.png").posi_abs
+                                h2.title_store Adidas
+                                p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
+                                .rate 
+                                    each icon in iconstar 
+                                        i(class=icon)
+                        .col-lg-4.mb-5
+                            a(href="store").card.border-0.pt-2.store
+                                img(src="imgs/store/04.png").posi_abs
+                                h2.title_store Nike
+                                p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
+                                .rate 
+                                    each icon in iconstar 
+                                        i(class=icon)
+                        .col-lg-4.mb-5
+                            a(href="store").card.border-0.pt-2.store
+                                img(src="imgs/store/05.png").posi_abs
+                                h2.title_store Jevans
+                                p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
+                                .rate 
+                                    each icon in iconstar 
+                                        i(class=icon)
 
     // All menu Modals 
     include pug/components/menu/_linkone        
