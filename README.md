@@ -11,3 +11,5 @@ __ Store is a web front end Design for shopping and build your store on this pla
 
 ## Code npm : 
 ###### install gulpjs `npm rm --global gulp ` | install Pugjs `npm install pug` 
+
+**Not Responsive yet !!**
