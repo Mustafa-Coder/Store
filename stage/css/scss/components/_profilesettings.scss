@@ -1,0 +1,31 @@
+.profilesettings {
+    padding: 15px;
+    border-radius: 5px;
+    background: white;
+    position: fixed;
+    right: -150%;
+    bottom: 93px;
+    width: 300px;
+    z-index: 1;
+    will-change: right;
+    transition: .3s;
+    &.activeprofileset {
+        right: -5px !important;
+    }
+    ul {
+        display: flex;
+        margin: 9px;
+        li {
+            a {
+                font-size: 16px;
+                margin: 14px;
+                color: rgb(128, 138, 143);
+                transition: .6s;
+                &:hover {
+                    transition: .6s;
+                    color: rgb(0, 153, 255);
+                }
+            }
+        }
+    }
+}

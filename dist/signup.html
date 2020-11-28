@@ -29,22 +29,11 @@
           </div>
           <div class="form-group d-flex"> 
             <label for="type">Type Account </label>
-            <div class="buyer d-flex">
-              <input class="m-2" type="radio"/>
-              <label>Buyer</label>
-            </div>
-            <div class="seller d-flex">
-              <input class="m-2" type="radio"/>
-              <label>Seller</label>
-            </div>
-          </div>
-          <div class="form-group d-flex storename">
-            <label for="pass">Store Name  </label>
-            <input class="form-control form-control-md " type="text" placeholder="Create Store"/>
-          </div>
-          <div class="form-group d-flex username">
-            <label for="user">Username  </label>
-            <input class="form-control form-control-md " type="text" placeholder="username"/>
+            <select class="select form-control"> 
+              <option selected="selected">Choose type...</option>
+              <option class="seller" value="seller">Seller </option>
+              <option class="buyer" value="Buyer">Buyer </option>
+            </select>
           </div>
           <div class="form-group d-flex"> 
             <label for="pass">Password</label>

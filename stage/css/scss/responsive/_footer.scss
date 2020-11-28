@@ -1,0 +1,25 @@
+// More categories and title page 
+// media screen 500px phone
+@media only screen and (max-width:520px) {
+    .footer-links {
+        .desc {
+            width: auto !important;
+        }
+
+       .form-group {
+            .Subscriber {
+                display: block !important;
+                width: auto;
+                overflow: hidden;
+                .form-control {
+                    width: 100% !important;
+                }
+
+                .btn-primary {
+                    width: 100% !important;
+                }
+            }
+       } 
+    }
+
+}

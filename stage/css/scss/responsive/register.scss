@@ -1,0 +1,64 @@
+// login page ------------------------------------------
+// Login page screen [500px maximum]
+@media only screen and (max-width:500px) {
+    .store {
+        .login {
+            width: auto;
+            .form-group {
+                display: block !important;
+                .form-control {
+                }
+            }
+        }        
+    }
+}
+// Login page screen [500px maximum]
+@media only screen and (max-width:308px) {
+    .store {
+        .information {
+            margin: auto;
+            ul {
+                display: block !important;
+                li {
+                    a {
+                        font-size: 20px ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End login page ------------------------------------------
+// Signup page ------------------------------------------
+// Signup page screen [500px maximum]
+@media only screen and (max-width:500px) {
+    .store {
+        .signup {
+            width: auto;
+            .form-group {
+                display: block !important;
+                .form-control {
+                }
+            }
+        }        
+    }
+}
+// Signup page screen [500px maximum]
+@media only screen and (max-width:308px) {
+    .store {
+        .information {
+            margin: auto;
+            ul {
+                display: block !important;
+                li {
+                    a {
+                        font-size: 20px ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Signup page ------------------------------------------

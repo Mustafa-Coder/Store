@@ -1,7 +1,9 @@
 .store {
+    transition: .3s;
     .store-dashboard {
         width: calc(100% - 150px);
         float: right;
+        transition: .3s;
 
         .content {
             .header {
@@ -19,6 +21,7 @@
                     position: absolute;
                     right: 13px;
                     top: 13px;
+                    transition: .3s;
                 }
             }
 

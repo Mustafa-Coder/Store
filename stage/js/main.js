@@ -2,6 +2,17 @@
 
 $(function () {
 
+// Dashnoard store 
+// sidebar 
+$(".showsidebar").on("click",function () {
+    $(".sidebar").toggleClass("showsidbarstore shadow-store");
+});
+// close sidebar
+$(".icon-close").on("click",function () {
+    $(".sidebar").removeClass("showsidbarstore shadow-store");
+});
+// end Dashboard store 
+
 // sign up 
     // when click him show option type account 
     $(".seller input").on("click",function () {
@@ -42,6 +53,9 @@ $(".Categories").on("click",function () {
     $(".show-cart").on("click",function () {
         $(".sidebarcart").toggleClass("activesidebar");
         $(this).toggleClass("activebag");
+         // Final When you clickable on Shopping cart do this: 
+         $('.show-profile').removeClass("activeshowprofile"); // button profile 
+         $('.profilesettings').removeClass("activeprofileset"); // Active Profile 
     });
 
     // delte product 
@@ -60,6 +74,14 @@ $(".Categories").on("click",function () {
     $(".linkones").on("blur",function () {
         $(this).removeClass("topunset");
     });
+    // profile settings sidebar 
+    $(".show-profile").on("click",function () {
+        $(this).toggleClass("activeshowprofile"); // button profile 
+        $('.profilesettings').toggleClass("activeprofileset"); // Active Profile 
+    
+
+    });
+
 // ./ home page 
 
 // show product 

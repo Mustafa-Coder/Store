@@ -12,7 +12,7 @@ html
         .container-fuild.stores 
             .row
                 // categories 400px screen
-                .col-lg-4.mt-5.mb-5
+                .col-lg-4.mt-5.mb-5.categories-screen
                     .info_search.mb-5
                         p.title_page Categories #[i.fas.fa-info]
                     .cats 
@@ -34,55 +34,60 @@ html
                         .form-group
                             input(type="search").form-control.form-control-md
                     // show stores 
-                    .row 
-                        // one store 
-                        .col-lg-4.mb-5
-                            a(href="store").card.border-0.pt-2.store
-                                img(src="imgs/store/02.png").posi_abs
-                                h2.title_store GlowFira
-                                p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-                                - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
-                                .rate 
-                                    each icon in iconstar 
-                                        i(class=icon)
-                        .col-lg-4.mb-5
-                            a(href="home.html").card.border-0.pt-2.store
-                                img(src="imgs/store/03.png").posi_abs
-                                h2.title_store Adidas
-                                p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-                                - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
-                                .rate 
-                                    each icon in iconstar 
-                                        i(class=icon)
-                        .col-lg-4.mb-5
-                            a(href="store").card.border-0.pt-2.store
-                                img(src="imgs/store/04.png").posi_abs
-                                h2.title_store Nike
-                                p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-                                - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
-                                .rate 
-                                    each icon in iconstar 
-                                        i(class=icon)
-                        .col-lg-4.mb-5
-                            a(href="store").card.border-0.pt-2.store
-                                img(src="imgs/store/05.png").posi_abs
-                                h2.title_store Jevans
-                                p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-                                - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
-                                .rate 
-                                    each icon in iconstar 
-                                        i(class=icon)
+                    .container 
+                        .row 
+                            // one store 
+                            .col-lg-4.mb-5.col-md-6.col-sm-6.col-xl-3
+                                a(href="store").card.border-0.pt-2.store
+                                    img(src="imgs/store/02.png").posi_abs
+                                    h2.title_store GlowFira
+                                    p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                    - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
+                                    .rate 
+                                        each icon in iconstar 
+                                            i(class=icon)
+                            .col-lg-4.mb-5.col-md-6.col-sm-6.col-xl-3
+                                a(href="home.html").card.border-0.pt-2.store
+                                    img(src="imgs/store/03.png").posi_abs
+                                    h2.title_store Adidas
+                                    p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                    - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
+                                    .rate 
+                                        each icon in iconstar 
+                                            i(class=icon)
+                            .col-lg-4.mb-5.col-md-6.col-sm-6.col-xl-3
+                                a(href="store").card.border-0.pt-2.store
+                                    img(src="imgs/store/04.png").posi_abs
+                                    h2.title_store Nike
+                                    p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                    - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
+                                    .rate 
+                                        each icon in iconstar 
+                                            i(class=icon)
+                            .col-lg-4.mb-5.col-md-6.col-sm-6.col-xl-3
+                                a(href="store").card.border-0.pt-2.store
+                                    img(src="imgs/store/05.png").posi_abs
+                                    h2.title_store Jevans
+                                    p.desc_store simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                    - var iconstar = ['fas fa-star','fas fa-star','fas fa-star','fas fa-star']
+                                    .rate 
+                                        each icon in iconstar 
+                                            i(class=icon)
 
     // All menu Modals 
     include pug/components/menu/_linkone        
     // btn show your products on cart 
     .show-cart 
         i.fas.fa-shopping-bag 
+    .show-profile
+        i.fas.fa-user
+        //  profile settings  
+    include pug/components/_profilesettings 
     // sidebar shopping cart 
     include pug/components/_sidebarcart  
-    // loading 
-    include pug/components/loading  
     // footer 
     include pug/components/footer
+    //- loading
+    include pug/components/loading.pug 
     // footer links script 
     include pug/layouts/_footer

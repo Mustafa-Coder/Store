@@ -17,18 +17,10 @@ html
                     input(type="email", class="form-control form-control-md ",placeholder="emailoffical@example.com", require)
                 .form-group.d-flex 
                     label(for="type") Type Account 
-                    .buyer.d-flex
-                        input(type="radio").m-2
-                        label Buyer
-                    .seller.d-flex
-                        input(type="radio").m-2
-                        label Seller
-                .form-group.d-flex.storename
-                    label(for="pass") Store Name  
-                    input(type="text", class="form-control form-control-md ",placeholder="Create Store")
-                .form-group.d-flex.username
-                    label(for="user") Username  
-                    input(type="text", class="form-control form-control-md ",placeholder="username")
+                    select.select.form-control 
+                        option(selected) Choose type...
+                        option(value="seller").seller Seller 
+                        option(value="Buyer").buyer Buyer 
                 .form-group.d-flex 
                     label(for="pass") Password
                     input(type="password", class="form-control form-control-md ",placeholder="Create password")

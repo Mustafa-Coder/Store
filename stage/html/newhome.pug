@@ -16,23 +16,23 @@ html
         // Categroies 
         .container.categories.mb-5.mt-5
             .row 
-                .col-lg-3 
-                    a(href="stores.html").card.border-0.p-3.category
+                .col-lg-3.col-md-6.col-sm-6.col-xl-4
+                    a(href="stores.html").card.border-0.p-3.category.mb-3
                         img(class="cover_cat",src="imgs/categories/08.jpg")
                         h1.title_cat Men
                         p.desc_cat Browse all the stores that have everything a man needs in his day
-                .col-lg-3 
-                    a(href="/Categories/all/key=home").card.border-0.p-3.category
+                .col-lg-3.col-md-6.col-sm-6.col-xl-4 
+                    a(href="/Categories/all/key=home").card.border-0.p-3.category.mb-3
                         img(class="cover_cat",src="imgs/categories/09.jpg")
                         h1.title_cat Woman
                         p.desc_cat Browse all the stores that have everything a man needs in his day
-                .col-lg-3 
-                    a(href="/Categories/all/key=home").card.border-0.p-3.category
+                .col-lg-3.col-md-6.col-sm-6.col-xl-4 
+                    a(href="/Categories/all/key=home").card.border-0.p-3.category.mb-3
                         img(class="cover_cat",src="imgs/categories/010.png")
                         h1.title_cat Kids
                         p.desc_cat Browse all the stores that have everything a man needs in his day
-                .col-lg-3 
-                    a(href="/Categories/all/key=home").card.border-0.p-3.category
+                .col-lg-3.col-md-6.col-sm-6.col-xl-4
+                    a(href="/Categories/all/key=home").card.border-0.p-3.category.mb-3
                         img(class="cover_cat",src="imgs/categories/011.jpg")
                         h1.title_cat Sports
                         p.desc_cat Browse all the stores that have everything a man needs in his day
@@ -41,7 +41,11 @@ html
     include pug/components/menu/_linkone        
     // btn show your products on cart 
     .show-cart 
-        i.fas.fa-shopping-bag 
+        i.fas.fa-shopping-bag
+    .show-profile
+        i.fas.fa-user
+        //  profile settings  
+    include pug/components/_profilesettings 
     // sidebar shopping cart 
     include pug/components/_sidebarcart  
     // loading 

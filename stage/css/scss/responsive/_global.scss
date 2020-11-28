@@ -1,0 +1,36 @@
+// .navbar-store  
+// screen Phone [520px maximum]
+@media only screen and (max-width:520px) {
+    .navbar-store  {
+        .links-nav {
+            ul {
+                .showsidebar{
+                    opacity: 1 !important;
+                    will-change: opacity;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+
+    // sidebarcart 
+    .sidebarcart {
+        width: 100% !important;
+        right: -650px !important;
+    }
+
+    // profilesettings
+    .profilesettings {
+
+        &.activeprofileset {
+            right: -81px !important;
+        }
+    }
+    // show profile 
+    .show-profile {
+        &.activeshowprofile {
+            right: 195px !important;
+        }
+    }
+
+}

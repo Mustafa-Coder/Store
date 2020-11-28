@@ -40,11 +40,20 @@ gulp.task("js",() => {
     .pipe(notify("Js Done ... ")) 
 });
 
+// Min file finish 
+gulp.task('finish', () => {
+    return gulp.src("dist/**/*.*")
+    .pipe(compres_zip('Store.zip'))
+    .pipe(gulp.dest("project/"))
+    .pipe(notify("Compeleted files"))
+});
+
 // Watch the Files
 gulp.task("watch", () => {
     require("./server.js");
     gulp.watch("stage/html/**/*.pug", gulp.series("html"));
     gulp.watch("stage/css/main.scss", gulp.series("css"));
     gulp.watch("stage/js/*.js", gulp.series("js"));
+    gulp.watch("dist/**/*.*",gulp.series("finish"));
 });
 

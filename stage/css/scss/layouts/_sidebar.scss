@@ -1,8 +1,16 @@
 .sidebar {
+    .icon-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        opacity: 0;
+    }
     width: 150px;
     background-color: #fdfdfd;
     height: 100vh;
     position: fixed;
+    transition: .3s;
     left: 0;
     top: 0;
     .avatar-store {

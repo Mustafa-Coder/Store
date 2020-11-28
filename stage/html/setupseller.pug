@@ -13,6 +13,10 @@ html
                 p We'll Help you to get best Experiment
                 hr.m-0
                 br  
+                
+                .form-group.mb-2.mt-2 
+                    label Store name 
+                    input(type="text",class='form-control form-control-md')
                 .form-group.mb-2.mt-2 
                     label Kind Your Store 
                     - var stores = ['clothes','golden','Watchs','Cars']
@@ -20,8 +24,6 @@ html
                         option(selected) Chosse...  
                         each store in stores
                             option(value=store) #{store}
-                    label another
-                    input(type="text",class='form-control form-control-md')
                 .form-group.mb-2.mt-2
                     label What's Kind of Currency you work it 
                     - var currencys = ['USD','EUR','GBP','CHF','CAD','ZAR','EGP']
@@ -29,8 +31,6 @@ html
                         option(selected) Chosse...  
                         each currency in currencys
                             option(value=currency) #{currency}
-                    label another
-                    input(type="text",class='form-control form-control-md')
                 button.btn.btn-primary.btn-md.gostore Next 
     // loading for setup
     .loading_setup

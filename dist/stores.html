@@ -31,7 +31,7 @@
       <div class="container-fuild stores"> 
         <div class="row">
           <!-- categories 400px screen-->
-          <div class="col-lg-4 mt-5 mb-5">
+          <div class="col-lg-4 mt-5 mb-5 categories-screen">
             <div class="info_search mb-5">
               <p class="title_page">Categories <i class="fas fa-info"></i></p>
             </div>
@@ -59,28 +59,30 @@
               </div>
             </div>
             <!-- show stores -->
-            <div class="row"> 
-              <!-- one store -->
-              <div class="col-lg-4 mb-5"><a class="card border-0 pt-2 store" href="store"><img class="posi_abs" src="imgs/store/02.png"/>
-                  <h2 class="title_store">GlowFira</h2>
-                  <p class="desc_store">simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
-                  <div class="rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                  </div></a></div>
-              <div class="col-lg-4 mb-5"><a class="card border-0 pt-2 store" href="home.html"><img class="posi_abs" src="imgs/store/03.png"/>
-                  <h2 class="title_store">Adidas</h2>
-                  <p class="desc_store">simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
-                  <div class="rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                  </div></a></div>
-              <div class="col-lg-4 mb-5"><a class="card border-0 pt-2 store" href="store"><img class="posi_abs" src="imgs/store/04.png"/>
-                  <h2 class="title_store">Nike</h2>
-                  <p class="desc_store">simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
-                  <div class="rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                  </div></a></div>
-              <div class="col-lg-4 mb-5"><a class="card border-0 pt-2 store" href="store"><img class="posi_abs" src="imgs/store/05.png"/>
-                  <h2 class="title_store">Jevans</h2>
-                  <p class="desc_store">simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
-                  <div class="rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                  </div></a></div>
+            <div class="container"> 
+              <div class="row"> 
+                <!-- one store -->
+                <div class="col-lg-4 mb-5 col-md-6 col-sm-6 col-xl-3"><a class="card border-0 pt-2 store" href="store"><img class="posi_abs" src="imgs/store/02.png"/>
+                    <h2 class="title_store">GlowFira</h2>
+                    <p class="desc_store">simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
+                    <div class="rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div></a></div>
+                <div class="col-lg-4 mb-5 col-md-6 col-sm-6 col-xl-3"><a class="card border-0 pt-2 store" href="home.html"><img class="posi_abs" src="imgs/store/03.png"/>
+                    <h2 class="title_store">Adidas</h2>
+                    <p class="desc_store">simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
+                    <div class="rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div></a></div>
+                <div class="col-lg-4 mb-5 col-md-6 col-sm-6 col-xl-3"><a class="card border-0 pt-2 store" href="store"><img class="posi_abs" src="imgs/store/04.png"/>
+                    <h2 class="title_store">Nike</h2>
+                    <p class="desc_store">simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
+                    <div class="rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div></a></div>
+                <div class="col-lg-4 mb-5 col-md-6 col-sm-6 col-xl-3"><a class="card border-0 pt-2 store" href="store"><img class="posi_abs" src="imgs/store/05.png"/>
+                    <h2 class="title_store">Jevans</h2>
+                    <p class="desc_store">simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
+                    <div class="rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div></a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -166,6 +168,17 @@
     </div>
     <!-- btn show your products on cart -->
     <div class="show-cart"> <i class="fas fa-shopping-bag"> </i></div>
+    <div class="show-profile"><i class="fas fa-user"></i>
+      <!--  profile settings  -->
+    </div>
+    <div class="profilesettings"> 
+      <ul class="list-unstyled"> 
+        <li><a href="dashstore.html"><i class="fas fa-edit"></i> </a></li>
+        <li><a href="#"><i class="fas fa-user"></i> </a></li>
+        <li><a href="#"><i class="fas fa-cog"></i> </a></li>
+        <li><a href="#"><i class="fas fa-arrow-left"></i> </a></li>
+      </ul>
+    </div>
     <!-- sidebar shopping cart -->
     <div class="sidebarcart card border-0 shadow-store">
       <h2 class="title">Your products </h2>
@@ -187,11 +200,6 @@
         <hr class="mb-0"/>
         <p class="total title m-2">Total $450</p>
       </div>
-    </div>
-    <!-- loading -->
-    <div class="loading-auto">
-      <h1>Store . </h1>
-      <div class="spinner-grow text-primary" role="status"><span class="sr-only">Loading...</span></div>
     </div>
     <!-- footer -->
     <div class="footer-links container-fuild p-5">
@@ -233,6 +241,10 @@
         </div>
         <div class="col-lg-6"></div>
       </div>
+    </div>
+    <div class="loading-auto">
+      <h1>Store . </h1>
+      <div class="spinner-grow text-primary" role="status"><span class="sr-only">Loading...</span></div>
     </div>
     <!-- footer links script -->
     <script src="js/all.min.js"></script>

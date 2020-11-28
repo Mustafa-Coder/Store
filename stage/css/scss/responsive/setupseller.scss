@@ -1,0 +1,12 @@
+// Setup Seller page ------------
+// screen Phone [710px maximum]
+@media only screen and (max-width:710px) {
+    .store {
+        .setupseller {
+            width: auto !important;
+            margin: 10% auto !important;
+            margin-right: 10px !important;
+            margin-left: 10px !important;
+        }
+    }
+}

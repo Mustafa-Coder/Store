@@ -72,6 +72,29 @@ body {
 }
 
 
+// show profile pages 
+// show shopping cart 
+.show-profile  {
+    width: 70px;
+    height: 70px;
+    background: white;
+    position: fixed;
+    right: 10px;
+    bottom: 93px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 rgba(154,160,185,0.025),0 1px 11px rgba(166,173,201,0.2);
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    transition: .3s;
+
+    &.activeshowprofile {
+       right: 275px !important;
+    }
+}
+
 .posi_rel {
     position: relative ;
 }
@@ -80,6 +103,12 @@ body {
     position: absolute ;
 }
 
+// show sidebar dashboard store 
+.showsidbarstore {
+    transition: .3s;
+    left: 0 !important;
+    z-index: 9;
+}
 
 // colors 
 $shadow-color: rgba(166,173,201,.2);

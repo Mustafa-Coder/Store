@@ -11,23 +11,23 @@ html
         // show Stores 
         .container-fuild.p-5
           .row
-            .col-lg-4
-              .banner.card.border-0.mb-3.mt-2
-                .control-overlay
-                  a(href="#") Join us now #[i.fas.fa-shopping-bag] 
-                .cover
-                  img(src="imgs/products/men/ads.jpg")
-                .info 
-                  h2 Woman Fasgion and kids 
-                  //- a(href="#").btn.btn-light.btn-sm Show
-            .col-lg-8
-              .banner.card.border-0.mb-3.mt-2
-                .control-overlay
-                  a(href="#")  Traveler Modern outside
-                .cover
-                  img(src="imgs/products/men/01.jpg")
-                .info 
-                  h2 Traveler Modern outside
+            //- .col-lg-4
+            //-   .banner.card.border-0.mb-3.mt-2
+            //-     .control-overlay
+            //-       a(href="#") Join us now #[i.fas.fa-shopping-bag] 
+            //-     .cover
+            //-       img(src="imgs/products/men/ads.jpg")
+            //-     .info 
+            //-       h2 Woman Fasgion and kids 
+            //-       //- a(href="#").btn.btn-light.btn-sm Show
+            //- .col-lg-8
+            //-   .banner.card.border-0.mb-3.mt-2
+            //-     .control-overlay
+            //-       a(href="#")  Traveler Modern outside
+            //-     .cover
+            //-       img(src="imgs/products/men/01.jpg")
+            //-     .info 
+            //-       h2 Traveler Modern outside
                   //- a(href="#").btn.btn-light.btn-sm Show
             //- .col-lg-12
             //-   .banner.card.border-0.mb-3.mt-2
@@ -42,7 +42,7 @@ html
           h2.title-products The New Storm 
           .products
               .row 
-                  .col-lg-4
+                  .col-lg-4.col-md-6.col-sm-6.col-xl-3
                     .product
                       .cover 
                           .control
@@ -51,7 +51,7 @@ html
                       .info 
                         h2.title Pandon homld Great
                         p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis ad! Tempora dolore reprehenderit explicabo nesciunt eveniet omnis! Enim, animi.
-                  .col-lg-4
+                  .col-lg-4.col-md-6.col-sm-6.col-xl-3
                     .product
                       .cover 
                           .control
@@ -60,7 +60,7 @@ html
                       .info 
                         h2.title Pandon homld Great
                         p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis ad! Tempora dolore reprehenderit explicabo nesciunt eveniet omnis! Enim, animi.
-                  .col-lg-4
+                  .col-lg-4.col-md-6.col-sm-6.col-xl-3
                     .product
                       .cover 
                           .control
@@ -69,7 +69,7 @@ html
                       .info 
                         h2.title Pandon homld Great
                         p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis ad! Tempora dolore reprehenderit explicabo nesciunt eveniet omnis! Enim, animi.   
-                  .col-lg-4
+                  .col-lg-4.col-md-6.col-sm-6.col-xl-3
                     .product
                       .cover 
                           .control
@@ -78,7 +78,7 @@ html
                       .info 
                         h2.title Pandon homld Great
                         p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis ad! Tempora dolore reprehenderit explicabo nesciunt eveniet omnis! Enim, animi.
-                  .col-lg-4
+                  .col-lg-4.col-md-6.col-sm-6.col-xl-3
                     .product
                       .cover 
                           .control
@@ -87,7 +87,7 @@ html
                       .info 
                         h2.title Pandon homld Great
                         p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis ad! Tempora dolore reprehenderit explicabo nesciunt eveniet omnis! Enim, animi.
-                  .col-lg-4
+                  .col-lg-4.col-md-6.col-sm-6.col-xl-3
                     .product
                       .cover 
                           .control
@@ -103,11 +103,14 @@ html
     // btn show your products on cart 
     .show-cart 
       i.fas.fa-shopping-bag 
+    .show-profile
+        i.fas.fa-user
+        //  profile settings  
+    include pug/components/_profilesettings 
     // sidebar shopping cart 
     include pug/components/_sidebarcart  
-    // loading 
-    include pug/components/loading  
     // footer 
     include pug/components/footer
+    include pug/components/loading.pug 
     // footer links script 
     include pug/layouts/_footer

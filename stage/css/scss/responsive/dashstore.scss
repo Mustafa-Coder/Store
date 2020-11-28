@@ -1,0 +1,66 @@
+// Setup Seller page ------------
+// screen Phone [520px maximum]
+@media only screen and (max-width:520px) {
+    .store {
+       .store-dashboard {
+            width: 100% !important;
+            will-change: width;
+            transition: .5s;
+           
+       }
+       // sidebar 
+       .sidebar {
+            left: -600;
+            width: 100% !important;
+            will-change: left;
+            transition: .5s;
+
+            .icon-close {
+                opacity: 1 !important;
+            }
+       }
+    }
+}
+
+// screen Phone [380px maximum]
+@media only screen and (max-width:380px) {
+    .store {
+       .store-dashboard {
+            width: 100% !important;
+            will-change: width;
+            transition: .5s;
+            // contnet 
+            .content {
+                .header {
+                    height: 100px;
+                    transition: .3s;
+                    will-change: height;
+                    // button 
+                    a {
+                        transition: .3s;
+                        will-change: left,right;
+                        right: 25px !important;
+                        top: 48px !important;
+                    }
+                }
+
+                .employees {
+                    a {
+                        right: unset !important;
+                        top: unset !important;
+                        bottom: 0 !important;
+                    }
+                }
+            }
+        }
+
+        // sidebar
+        .sidebar {
+            width: 100% !important;
+            left: -600;
+            .icon-close {
+                opacity: 1 !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+// store > addorders and show roders 
+// screen Phone [520px ]
+@media only screen and (max-width:520px) {
+    .store {
+        .addorders  {
+            margin-bottom: 15px;
+        }
+        // show orders 
+        .orders {
+            .order-table {
+                .table {
+                    display: block !important;
+                    tbody {
+                        td {
+                            a {
+                                margin-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// screen Phone [300px]
+@media only screen and (max-width:300px) {
+    .store {
+        .addorders  {
+            .neworder {
+                .form-group {
+                    .form {
+                        .form-control {
+                            width: auto !important; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
